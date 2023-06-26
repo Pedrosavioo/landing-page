@@ -261,4 +261,21 @@ footer nav a {
     .container.row-reverse{
         flex-direction: row-reverse; /* inverter direção dos elementos, que por padrão é mostrado da esquerda para a direita. */
     }
+
+    .about-column{
+        flex: 2;
+    }
+
+    .about-column p {
+        font-size: 1.25rem;
+        max-width: 16rem;
+    }
+
+    footer nav {
+        flex: 1;
+    }
+
+    .newsletter-form {
+        flex: 3;
+    }
 }
