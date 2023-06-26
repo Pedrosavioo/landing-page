@@ -17,6 +17,8 @@ body{
     padding: 0 1rem;
 }
 
+/* HEADER*/
+
 header,
 .hero-section,
 .courses-section,
@@ -63,6 +65,8 @@ header nav a:nth-child(2n-1){ /* :nth-child() é um cálculo para pegar elemento
 
 }
 
+/* MAIN HERO-SECTION */
+
 .hero-section{
     padding-right: 0;
     padding-bottom: 16rem;
@@ -78,7 +82,6 @@ h1 {
     font-size: 3rem;
     line-height: 105%;
 }
-
 h2 {
     font-size: 2.5rem;
 }
@@ -116,13 +119,15 @@ h2 {
     width: 40px;
 }
 
+/* MAIN COURSES-SECTION */
+
 .courses-section {
     padding-bottom: 8rem;
 }
 
 .cards {
     display: flex;
-    flex-direction: column; /* alinhados abaixo */
+    flex-direction: column; /* alinhados em colunas/abaixo */
     align-items: start; /* alinhados a esquerda*/
     gap: 1.25rem;
     margin-top: -8rem; /* fazer efeito dos cards sobrepor o conteúdo da section principal*/
@@ -154,7 +159,7 @@ h2 {
     width: fit-content; /* para funcionar o efeito descrito acima, foi preciso ajustar a largura do elemento deixando do seu próprio tamanho, usando fit-content, pois apenas com o margin e por ser definido como display block o elemento não ia para a direita, pois estava ocupando toda a largura disponível. */
 }
 
-/* Footer */
+/* FOOTER */
 
 footer {
     border-bottom: 0;
@@ -179,7 +184,8 @@ footer nav a {
     width: 100%;
 }
 
-/* Utilitários */
+/* UTILITÁRIOS */
+
 .mt-1{
     margin-top: 1rem;
 }
@@ -207,4 +213,24 @@ footer nav a {
 
 .text-center{
     text-align: center;
+}
+
+/* Responsividade */
+@media screen and (min-width: 40rem) {
+    header nav{
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: row; /* alinhados em linha/de lado*/
+        flex-wrap: wrap; /* Os itens que não cabem na linha atual são movidos para a próxima linha, criando uma nova linha. Isso acontece horizontalmente, da esquerda para a direita.
+        O espaço restante na linha anterior (se houver) é distribuído entre os itens, de acordo com as regras de alinhamento e espaçamento definidas. 
+        Esse processo continua até que todos os itens tenham sido acomodados em linhas separadas.*/
+        justify-content: center;
+    }
+
+    .card:nth-child(2n){
+        margin-top: 1rem;
+    }
 }
