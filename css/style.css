@@ -251,6 +251,9 @@ footer nav a {
 }
 
 @media screen and (min-width: 72rem) {
+    h1, h2 {
+        font-size: 4rem;
+    }
     .container {
         display: flex;
         align-items: center;
@@ -278,4 +281,8 @@ footer nav a {
     .newsletter-form {
         flex: 3;
     }
+}
+
+@media screen and (min-width: 80rem) {
+    max-width: 80rem;
 }
