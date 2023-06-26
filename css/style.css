@@ -249,3 +249,16 @@ footer nav a {
         margin: 0;
     }
 }
+
+@media screen and (min-width: 72rem) {
+    .container {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 72rem;
+    }
+
+    .container.row-reverse{
+        flex-direction: row-reverse; /* inverter direção dos elementos, que por padrão é mostrado da esquerda para a direita. */
+    }
+}
