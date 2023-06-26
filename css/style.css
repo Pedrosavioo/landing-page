@@ -148,6 +148,12 @@ h2 {
     margin: 1rem 0;
 }
 
+.card a {
+    display: block;
+    margin: 3rem 0 0 auto; /* para empurrar o elemento para direita */
+    width: fit-content; /* para funcionar o efeito descrito acima, foi preciso ajustar a largura do elemento deixando do seu próprio tamanho, usando fit-content, pois apenas com o margin e por ser definido como display block o elemento não ia para a direita, pois estava ocupando toda a largura disponível. */
+}
+
 .mt-1{
     margin-top: 1rem;
 }
