@@ -116,6 +116,38 @@ h2 {
     width: 40px;
 }
 
+.courses-section {
+    padding-bottom: 8rem;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column; /* alinhados abaixo */
+    align-items: start; /* alinhados a esquerda*/
+    gap: 1.25rem;
+    margin-top: -8rem; /* fazer efeito dos cards sobrepor o conteúdo da section principal*/
+    margin-bottom: 4rem;
+}
+
+.card {
+    background: var(--color-primary);
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    max-width: 17rem;
+    padding: 2rem 0 0 2rem;
+}
+
+.card:nth-child(2n) { /* :nth-child() é um cálculo para pegar elementos. exemplo-1: :nth-child(2n) pega os elementos pares, ou seja, vai pegar os elementos que estâo na direita(Cursos e Contatos). exemplo-2: :nth-child(2n-1) pega os elementos ímpares, ou seja, vai pegar os elementos que estâo na esquerda(Inicio e Eventos).*/
+    align-self: end; /* alinha com o fim, ou seja, a direita. */
+    background: var(--color-secondary);
+}
+
+.card strong {
+    display: block;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
 .mt-1{
     margin-top: 1rem;
 }
