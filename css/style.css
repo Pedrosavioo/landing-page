@@ -154,6 +154,32 @@ h2 {
     width: fit-content; /* para funcionar o efeito descrito acima, foi preciso ajustar a largura do elemento deixando do seu próprio tamanho, usando fit-content, pois apenas com o margin e por ser definido como display block o elemento não ia para a direita, pois estava ocupando toda a largura disponível. */
 }
 
+/* Footer */
+
+footer {
+    border-bottom: 0;
+    padding: 1rem 2.5rem 4rem;
+}
+
+footer nav a {
+    display: block;
+    padding-left: 0;
+}
+
+.newsletter-form label {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.newsletter-form input {
+    border: 2px solid var(--color-black);
+    box-shadow: 4px 4px 0 var(--color-black);
+    font-size: 1.5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+/* Utilitários */
 .mt-1{
     margin-top: 1rem;
 }
