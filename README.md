@@ -1,5 +1,6 @@
-<p alingn="center">
-    Landing page - Escola de cursos de Jazz
+<h2 align="center"">Landing Page</h2>
+<p align="center">
+    Escola de cursos de Jazz
 </p>
 
 ## 🚀 Tecnologias
