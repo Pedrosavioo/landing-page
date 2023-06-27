@@ -1,7 +1,17 @@
 <p alingn="center">
-    landing page - Escola de cursos de Jazz
+    Landing page - Escola de cursos de Jazz
 </p>
 
+## 🚀 Tecnologias
+
+- Html
+- Css
+- Git e Github
+- Figma
+
+## 📄 Projeto
+ Uma página simples voltada para vender cursos de Jazz
+
 <p alingn="center">
-    <img src".github/Desktop-version.jpg" width="100%">
+    <img src=".github/mobile-version.jpg">
 </p>
